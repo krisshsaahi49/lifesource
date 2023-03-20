@@ -23,17 +23,6 @@ const homesupport = () => {
       <EventTeam />
       <EventFact />
       <Contact />
-      {/* <EventCount />
-      <EventAbout />
-      
-      <EventFeatures />
-      <EventDetails />
-      <ScheduleTab />
-      <EventPrice />
-      <EventFact />
-      <Eventgallery />
-      <EventSponser />
-      <EventLocation /> */}
       {/* <FooterErp fClass="event_footer_area" FooterData={FooterData} /> */}
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link as Link1, NavLink } from "react-router-dom";
 import Sticky from "react-stickynode";
-import {Link as Link2} from "react-scroll";
+import { Link as Link2 } from "react-scroll";
 
 class CustomNavbar extends Component {
   render() {
@@ -45,208 +45,30 @@ class CustomNavbar extends Component {
                 id="navbarSupportedContent"
               >
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
-                  {/* <li className="nav-item dropdown submenu mega_menu mega_menu_two"> */}
-                  {/* <Link to="./" className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Home
-                                    </Link> */}
-
-                  {/* <div className="mega_menu_inner">
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <ul className="dropdown-menu scroll">
-                                                <li className="nav-item">
-                                                    <NavLink to="/Home-chat" exact className="item">
-                                                        <span className="img">
-                                                            <span className="rebon_tap">New</span>
-                                                            <img src={require('../img/mega-menu-img/home-chat.jpg')} alt="Prototyping Tool"/>
-                                                        </span>
-                                                        <span className="text">
-                                                            Hoeme Chat
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/Home-Tracking" exact className="item">
-                                                        <span className="img">
-                                                            <span className="rebon_tap">New</span>
-                                                            <img src={require('../img/mega-menu-img/home-track.jpg')} alt="Prototyping Tool"/>
-                                                        </span>
-                                                        <span className="text">
-                                                            Home Tracking
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/Home-event" exact className="item">
-                                                        <span className="img">
-                                                            <span className="rebon_tap">New</span>
-                                                            <img src={require('../img/mega-menu-img/home-event.jpg')} alt="Event"/>
-                                                        </span>
-                                                        <span className="text">   
-                                                            Home Event
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/Home-cloud" exact className="item">
-                                                        <span className="img">
-                                                            <span className="rebon_tap">New</span>
-                                                            <img src={require('../img/mega-menu-img/home12.jpg')} alt="cloud"/>
-                                                        </span>
-                                                        <span className="text">   
-                                                            Cloud Based Saas
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/Home-ERP" exact className="item">
-                                                        <span className="img">
-                                                            <img src={require('../img/mega-menu-img/erp.jpg')} alt="Prototyping Tool"/>
-                                                        </span>
-                                                        <span className="text">
-                                                            Hoeme ERP
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/HomeHosting" exact className="item">
-                                                        <span className="img">
-                                                            <img src={require('../img/mega-menu-img/hosting.jpg')} alt="Prototyping Tool"/>
-                                                        </span>
-                                                        <span className="text">
-                                                            Hoeme Hosting
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/HomeSecurity" exact className="item">
-                                                        <span className="img">
-                                                            <img src={require('../img/mega-menu-img/home-security.jpg')} alt="Prototyping Tool"/>
-                                                        </span>
-                                                        <span className="text">
-                                                            Hoeme Security
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <NavLink to="/home-support" exact className="item">
-                                                        <span className="img">
-                                                            <img src={require('../img/mega-menu-img/support.jpg')} alt="Prototyping Tool"/>
-                                                        </span>
-                                                        <span className="text">
-                                                            Hoeme Support
-                                                        </span>
-                                                    </NavLink>
-                                                </li>
-                                                <li className="nav-item">
-                                                        <NavLink to="/Landing" exact className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/home14.jpg')} alt="Prototyping Tool"/>
-                                                            </span>
-                                                            <span className="text">
-                                                                App Landing (One Page)
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <NavLink to="/" exact className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/Prototyping_Tool.jpg')} alt="Prototyping Tool"/>
-                                                            </span>
-                                                            <span className="text">
-                                                                Prototyping Tool
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <NavLink to="/Payment-processing" exact className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/home16.jpg')} alt=""/>
-                                                            </span>
-                                                            <span className="text">
-                                                                Payment Processing
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <NavLink to="/Startup" exact className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/home15.jpg')} alt=""/>
-                                                            </span>
-                                                            <span className="text">
-                                                                Startup
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <NavLink to="/Digital-marketing" className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/home11.jpg')} alt="Digital Marketing"/>
-                                                            </span>
-                                                            <span className="text">
-                                                                Digital Marketing
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <NavLink to="/HR-Management" className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/home4.jpg')} alt="HR Management"/>
-                                                            </span>
-                                                            <span className="text">
-                                                                HR Management
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <NavLink to="/Home-CRM" exact className="item">
-                                                            <span className="img">
-                                                                <img src={require('../img/mega-menu-img/home3.jpg')} alt="CRM Software"/>
-                                                            </span>
-                                                            <span className="text">
-                                                                CRM Software
-                                                            </span>
-                                                        </NavLink>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div> */}
-                  {/* </li> */}
                   <li className="nav-item">
                     <NavLink title="Home" className="nav-link" to="./">
                       Home
                     </NavLink>
                   </li>
 
-                  {/* <li className="dropdown submenu nav-item">
-                                    <Link  exact title="Service" className="nav-link" to='/About'>About</Link> */}
                   <li className="nav-item">
-                    {/* <NavLink title="About" className="nav-link" to="/About">
+                    <Link2 to="about" spy={true} smooth={true}>
                       About
-                    </NavLink> */}
-                    <Link2  to="about" spy={true} smooth={true}>About</Link2>
+                    </Link2>
                   </li>
-                  
-                  {/* <ul role="menu" className=" dropdown-menu">
-                                        <li className="nav-item"><NavLink exact title="Service" className="nav-link" to='/About'>About</NavLink></li>
-                                    </ul> */}
-                  {/* </li> */}
-                  {/* <li className="dropdown submenu nav-item">
-                                    <Link exact title="Faq" className="nav-link" to='/Mission'>Mission</Link> */}
+
                   <li className="nav-item">
-                     <Link2  to="mission" spy={true} smooth={true}>Mission</Link2>
+                    <Link2 to="mission" spy={true} smooth={true}>
+                      Mission
+                    </Link2>
                   </li>
-                  {/* <ul role="menu" className=" dropdown-menu">
-                                        <li className="nav-item"><NavLink exact title="About" className="nav-link" to='/About'>About</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="Process" className="nav-link" to='/Process'>Process</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="Team" className="nav-link" to='/Team'>Team</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="Price" className="nav-link" to='/Price'>Price</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="Faq" className="nav-link" to='/Faq'>Faq</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="SignIn" className="nav-link" to='/SignIn'>Sign In</NavLink></li>
-                                        <li className="nav-item"><NavLink exact title="SignUp" className="nav-link" to='/SignUp'>Sign Up</NavLink></li>
-                                    </ul> */}
-                  {/* </li> */}
+
+                  <li className="nav-item">
+                    <Link2 to="team" spy={true} smooth={true}>
+                      Team
+                    </Link2>
+                  </li>
+
                   <li className="dropdown submenu nav-item">
                     <Link1
                       title="Pages"
@@ -344,7 +166,9 @@ class CustomNavbar extends Component {
                     </ul>
                   </li>
                   <li className="nav-item">
-                         <Link2  to="contact" spy={true} smooth={true}>Contact</Link2>
+                    <Link2 to="contact" spy={true} smooth={true}>
+                      Contact
+                    </Link2>
                   </li>
                 </ul>
                 {/* <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">Get Started</a> */}

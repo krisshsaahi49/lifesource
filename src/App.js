@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-/*------ Pages-----*/
-import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Mission from "./Pages/Mission";
 import ScrollToTopRoute from "./ScrollToTopRoute";
 import HomeEvent from "./Pages/Home-event";
 import Faq from "./Pages/Faq";
@@ -25,12 +22,6 @@ class App extends Component {
       <Router>
         <Switch>
           <ScrollToTopRoute exact={true} path={"/"} component={HomeEvent} />
-          {/* <ScrollToTopRoute exact={true} path={"/About"} component={About} /> */}
-          {/* <ScrollToTopRoute
-            exact={true}
-            path={"/Mission"}
-            component={Mission}
-          /> */}
           <ScrollToTopRoute exact={true} path={"/Faq"} component={Faq} />
           <ScrollToTopRoute exact={true} path={"/SignIn"} component={SignIn} />
           <ScrollToTopRoute exact={true} path={"/SignUp"} component={SignUp} />
