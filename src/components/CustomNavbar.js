@@ -12,7 +12,7 @@ class CustomNavbar extends Component {
                     <div className={`container ${cClass}`}>
                         <Link className={`navbar-brand ${slogo}`} to="/">
                             <img src={require("../img/liefesource1_160*90.svg")} alt=""/>
-                            <img src={require("../img/liefesource1_160*90.svg")} alt="logo"/>
+                            <img src={require("../img/lifesource2_160*90.svg")} alt="logo"/>
                         </Link>
                         <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="menu_toggle">
