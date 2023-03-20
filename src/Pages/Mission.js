@@ -1,18 +1,20 @@
-import React from 'react';
-import CustomNavbar from '../components/CustomNavbar';
-import Breadcrumb from '../components/Breadcrumb';
-import Contacts from '../components/Contacts';
-import FooterTwo from '../components/Footer/FooterTwo';
-import FooterData from '../components/Footer/FooterData';
+import React from "react";
+import CustomNavbar from "../components/CustomNavbar";
+import Breadcrumb from "../components/Breadcrumb";
+import Contacts from "../components/Contacts";
+import FooterTwo from "../components/Footer/FooterTwo";
+import FooterData from "../components/Footer/FooterData";
 
 const Mission = () => {
-    return(
-        <div className="body_wrapper">
-            <CustomNavbar slogo="sticky_logo" mClass="menu_four" nClass="w_menu ml-auto mr-auto"/>
-            <Breadcrumb breadcrumbClass="breadcrumb_area" imgName="breadcrumb/banner_bg.png" Ptitle="Contac Us" Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"/>
-            <Contacts/>
-            <FooterTwo FooterData={FooterData}/>
-        </div>
-    )
-}
+  return (
+    <div id="mission" className="body_wrapper">
+      <Breadcrumb
+        breadcrumbClass="breadcrumb_area"
+        imgName="breadcrumb/banner_bg.png"
+        Ptitle="Mission"
+        Pdescription="Our mission is to create a user-friendly online portal that connects blood donors and recipients, making it easy for individuals and organizations to find and donate blood. Our goal is to facilitate the process of blood donation and increase the availability of blood for those in need, while ensuring the safety and privacy of all users. We strive to create a community of individuals who are passionate about saving lives and making a difference in the world through blood donation."
+      />
+    </div>
+  );
+};
 export default Mission;

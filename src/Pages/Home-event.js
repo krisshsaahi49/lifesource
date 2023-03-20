@@ -4,6 +4,9 @@ import EventBanner from "../components/Banner/EventBanner";
 import EventTeam from "../components/Team/EventTeam";
 import EventFact from "../components/EventFact";
 import FooterData from "../components/Footer/FooterData";
+import About from "./About";
+import Mission from "./Mission";
+import Contact from "./Contact";
 
 const homesupport = () => {
   return (
@@ -15,19 +18,11 @@ const homesupport = () => {
         hbtnClass="event_btn"
       />
       <EventBanner />
+      <About />
+      <Mission />
       <EventTeam />
       <EventFact />
-      {/* <EventCount />
-      <EventAbout />
-      
-      <EventFeatures />
-      <EventDetails />
-      <ScheduleTab />
-      <EventPrice />
-      <EventFact />
-      <Eventgallery />
-      <EventSponser />
-      <EventLocation /> */}
+      <Contact />
       {/* <FooterErp fClass="event_footer_area" FooterData={FooterData} /> */}
     </div>
   );

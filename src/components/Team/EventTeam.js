@@ -18,14 +18,12 @@ class EventTeam extends Component{
             <section id="team" className="event_team_area sec_pad">
             <div className="container">
                 <div className="hosting_title security_title text-center">
-                    <h2 className="wow fadeInUp" data-wow-delay="0.2s"><span>Speakers</span> Who's Speaking</h2>
+                    <h2 className="wow fadeInUp" data-wow-delay="0.2s"><span>Our Dynamic Team</span></h2>
                 </div>
                 <Slider ref={c => (this.slider = c)} className="event_team_slider" {...settings}>
-                    <EventTeamItem image="team_01.jpg" name="John Deo" post="Wp Developer"/>
-                    <EventTeamItem image="team_01.jpg" name="Jason Response" post="Graphic Design"/>
-                    <EventTeamItem image="team_01.jpg" name="John Deo" post="Wp Developer"/>
-                    <EventTeamItem image="team_01.jpg" name="John Deo" post="Wp Developer"/>
-                    <EventTeamItem image="team_01.jpg" name="John Deo" post="Wp Developer"/>
+                    <EventTeamItem image="team_01.jpg" name="Krishna Saahi Yavana" post="Backend Developer"/>
+                    <EventTeamItem image="team_01.jpg" name="Chinmaie Tiyyagura" post="Frontend Developer"/>
+                    <EventTeamItem image="team_01.jpg" name="Uma Sowmya Puppala" post="Database Adminstrator"/>
                 </Slider>
             </div>
         </section>
