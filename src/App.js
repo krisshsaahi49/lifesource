@@ -12,6 +12,7 @@ import SignUp from "./Pages/SignUp";
 import NotFound from "./Pages/404";
 import { animateScroll } from "react-scroll";
 
+
 class App extends Component {
   componentDidMount() {
     this.props.hideLoader();
@@ -24,12 +25,20 @@ class App extends Component {
       <Router>
         <Switch>
           <ScrollToTopRoute exact={true} path={"/"} component={HomeEvent} />
-          <ScrollToTopRoute exact={true} path={"/About"} component={About} />
-          <ScrollToTopRoute exact={true} path={"/Mission"} component={Mission} />
+          {/* <ScrollToTopRoute exact={true} path={"/About"} component={About} /> */}
+          {/* <ScrollToTopRoute
+            exact={true}
+            path={"/Mission"}
+            component={Mission}
+          /> */}
           <ScrollToTopRoute exact={true} path={"/Faq"} component={Faq} />
           <ScrollToTopRoute exact={true} path={"/SignIn"} component={SignIn} />
           <ScrollToTopRoute exact={true} path={"/SignUp"} component={SignUp} />
-          <ScrollToTopRoute exact={true} path={"/Contact"} component={Contact} />
+          <ScrollToTopRoute
+            exact={true}
+            path={"/Contact"}
+            component={Contact}
+          />
         </Switch>
       </Router>
     );

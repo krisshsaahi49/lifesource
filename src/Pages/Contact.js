@@ -7,8 +7,7 @@ import FooterData from '../components/Footer/FooterData';
 
 const Contact = () => {
     return(
-        <div className="body_wrapper">
-            <CustomNavbar slogo="sticky_logo" mClass="menu_four" nClass="w_menu ml-auto mr-auto"/>
+        <div id='contact' className="body_wrapper">
             <Breadcrumb breadcrumbClass="breadcrumb_area" imgName="breadcrumb/banner_bg.png" Ptitle="Contac Us" Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"/>
             <Contacts/>
             <FooterTwo FooterData={FooterData}/>
