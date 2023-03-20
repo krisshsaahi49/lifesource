@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
+import '../assets/signUpForm.css'
 
 const SignUpForm =()=>{
     return(
@@ -9,7 +10,7 @@ const SignUpForm =()=>{
                     <div className="row">
                         <div className="col-lg-5">
                             <div className="sign_info_content">
-                                <h3 className="f_p f_600 f_size_24 t_color3 mb_40">Allready have an account?</h3>
+                                <h3 className="f_p f_600 f_size_24 t_color3 mb_40">Already have an account?</h3>
                                 <h2 className="f_p f_400 f_size_30 mb-30">Login now and<br/> starting using our <br/><span className="f_700">amazing</span> products</h2>
                                 <ul className="list-unstyled mb-0">
                                     <li><i className="ti-check"></i> Premium Access to all Products</li>
@@ -23,6 +24,14 @@ const SignUpForm =()=>{
                             <div className="login_info">
                                 <h2 className="f_p f_600 f_size_24 t_color3 mb_40">Sign Up</h2>
                                 <form action="#" className="login-form sign-in-form">
+                                <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Firstname</label>
+                                        <input type="text" placeholder="Name"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Lastname</label>
+                                        <input type="text" placeholder="Name"/>
+                                    </div>
                                     <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Username</label>
                                         <input type="text" placeholder="Name"/>
@@ -32,8 +41,60 @@ const SignUpForm =()=>{
                                         <input type="text" placeholder="saasland@gmail.com"/>
                                     </div>
                                     <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Contact Number</label>
+                                        <input type="text" placeholder="999-999-9999"/>
+                                    </div>
+                                    <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Password</label>
                                         <input type="password" placeholder="******"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Confirm Password</label>
+                                        <input type="password" placeholder="******"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Gender</label>
+                                        <input type="radio" name='male'/><label>Male</label>
+                                        <input type="radio" name='female'/><label>Female</label>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Blood Group</label>
+                                        <input type="text" placeholder="Example: A+"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Age</label>
+                                        <input type="text" placeholder="40"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Height</label>
+                                        <input type="text" placeholder="165"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Weight</label>
+                                        <input type="text" placeholder="65"/>
+                                    </div>
+
+                                    <div className="form-group radio">
+                                        <label className="f_p text_c f_400">Tested Covid+</label>
+                                        <input type="radio" name='yes'/><label>Yes</label>
+                                        <input type="radio" name='no'/><label>No</label>
+                                    </div>
+                                    <div className="form-group radio">
+                                        <label className="f_p text_c f_400">Tested HIV</label>
+                                        <input type="radio" name='yes'/><label>Yes</label>
+                                        <input type="radio" name='no'/><label>No</label>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Last time blood donated on</label>
+                                        <input type="date"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Any undergoing medications</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div className="form-group text_box">
+                                        <label className="f_p text_c f_400">Any other health issue</label>
+                                        <input type="text"/>
                                     </div>
                                     <div className="extra mb_20">
                                         <div className="checkbox remember">
