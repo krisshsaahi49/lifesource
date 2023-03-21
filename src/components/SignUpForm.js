@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
-import '../assets/signUpForm.css'
+import {Link} from 'react-router-dom';
+// import '../assets/signUpForm.css'
 
 const SignUpForm =()=>{
     return(

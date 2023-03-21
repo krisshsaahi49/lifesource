@@ -4,7 +4,7 @@ import Sticky from 'react-stickynode';
 
 class CustomNavbar extends Component {
     render() {
-        var {mClass, nClass, cClass, slogo, hbtnClass} =this.props;
+        var {mClass, nClass, cClass, slogo} =this.props;
         return (
             <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
                 <header className="header_area">
