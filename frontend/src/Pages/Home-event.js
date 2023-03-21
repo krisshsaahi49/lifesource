@@ -22,7 +22,7 @@ const homesupport = () => {
       <About />
       <Mission />
       <EventTeam />
-      <EventFact />
+      {/* <EventFact /> */}
       <Donor/>
       <Recipient/>
       <Contact />
