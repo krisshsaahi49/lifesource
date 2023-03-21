@@ -15,8 +15,6 @@ const SignUpForm = () => {
   const [age, setAge] = useState("");
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
-  const [testedCovid, setCovid] = useState(false);
-  const [testedHiv, setHiv] = useState(false);
   const [lasttimeDonatedblood, setDonateddate] = useState("");
   const [anyundergoingMedication, setMedications] = useState("");
   const [anyotherHealthissue, setHealthissues] = useState("");
@@ -41,8 +39,6 @@ const SignUpForm = () => {
         age,
         height,
         weight,
-        testedCovid,
-        testedHiv,
         lasttimeDonatedblood,
         anyundergoingMedication,
         anyotherHealthissue,
@@ -55,8 +51,8 @@ const SignUpForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
       <section className="sign_in_area bg_color sec_pad">
+        <form onSubmit={handleSubmit}>
         <div className="container">
           <div className="sign_info">
             <div className="row">
@@ -311,8 +307,8 @@ const SignUpForm = () => {
             </div>
           </div>
         </div>
+        </form>
       </section>
-    </form>
   );
 };
 export default SignUpForm;
