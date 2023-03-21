@@ -53,8 +53,8 @@ const SignUpForm =()=>{
                                     </div>
                                     <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Gender</label>
-                                        <input type="radio" name='male'/><label>Male</label>
-                                        <input type="radio" name='female'/><label>Female</label>
+                                        <input type="radio" name='gender' value='male'/><label>Male</label>
+                                        <input type="radio" name='gender' value='female'/><label>Female</label>
                                     </div>
                                     <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Blood Group</label>
@@ -73,15 +73,15 @@ const SignUpForm =()=>{
                                         <input type="text" placeholder="65"/>
                                     </div>
 
-                                    <div className="form-group radio">
+                                    <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Tested Covid+</label>
-                                        <input type="radio" name='yes'/><label>Yes</label>
-                                        <input type="radio" name='no'/><label>No</label>
+                                        <input type="radio" name='covid' value='yes'/><label>Yes</label>
+                                        <input type="radio" name='covid' value='no'/><label>No</label>
                                     </div>
-                                    <div className="form-group radio">
+                                    <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Tested HIV</label>
-                                        <input type="radio" name='yes'/><label>Yes</label>
-                                        <input type="radio" name='no'/><label>No</label>
+                                        <input type="radio" name='hiv' value='yes'/><label>Yes</label>
+                                        <input type="radio" name='hiv' value='no'/><label>No</label>
                                     </div>
                                     <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Last time blood donated on</label>

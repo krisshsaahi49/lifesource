@@ -8,11 +8,15 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 // import NotFound from "./Pages/404";
 import { animateScroll } from "react-scroll";
+import RecipientSignUp from "./Pages/RecipientSignUp";
 
 
 class App extends Component {
   componentDidMount() {
     this.props.hideLoader();
+    if (performance.navigation.type === 1) {
+      window.location.href = "/";
+    }
   }
   scrollToEventAbout = () => {
     animateScroll.scrollToComponent(Contact, { offset: 0, duration: 500 });
@@ -25,6 +29,7 @@ class App extends Component {
           <ScrollToTopRoute exact={true} path={"/Faq"} component={Faq} />
           <ScrollToTopRoute exact={true} path={"/SignIn"} component={SignIn} />
           <ScrollToTopRoute exact={true} path={"/SignUp"} component={SignUp} />
+          <ScrollToTopRoute exact={true} path={"/RecipientSignUp"} component={RecipientSignUp} />
           <ScrollToTopRoute
             exact={true}
             path={"/Contact"}

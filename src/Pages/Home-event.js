@@ -6,6 +6,8 @@ import EventFact from "../components/EventFact";
 import About from "./About";
 import Mission from "./Mission";
 import Contact from "./Contact";
+import Donor from "./Donor";
+import Recipient from "./Recipient";
 
 const homesupport = () => {
   return (
@@ -21,6 +23,8 @@ const homesupport = () => {
       <Mission />
       <EventTeam />
       <EventFact />
+      <Donor/>
+      <Recipient/>
       <Contact />
       {/* <FooterErp fClass="event_footer_area" FooterData={FooterData} /> */}
     </div>

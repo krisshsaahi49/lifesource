@@ -3095,6 +3095,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-left: auto;
   margin-right: auto;
 }
+.link_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
 
 /*================= Start breadcrumb_area_two css =================*/
 .breadcrumb_area_two {
@@ -4375,4 +4384,42 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+}
+
+/* ------- */
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.form-group label {
+  margin-right: 10px;
+}
+
+.form-group input[type="radio"] {
+  display: none;
+}
+
+.form-group input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 2px solid #ccc;
+  vertical-align: middle;
+}
+
+.form-group input[type="radio"]:checked + label:before {
+  background-color: #5e2ced;
+  border-color: #5e2ced;
+}
+
+.form-group input[type="radio"]:focus + label:before {
+  outline: none;
+  box-shadow: 0 0 0 2px #5e2ced30;
 }

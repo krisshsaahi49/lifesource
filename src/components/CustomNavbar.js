@@ -68,24 +68,28 @@ class CustomNavbar extends Component {
                       Team
                     </Link2>
                   </li>
+                  {/* <li className="nav-item">
+                    <Link2 className="nav-link" to="donor" spy={true} smooth={true}>
+                      Donor
+                    </Link2>
+                  </li> */}
+                  {/* <li className="nav-item">
+                    <Link2 className="nav-link" to="recipient" spy={true} smooth={true}>
+                      Recipient
+                    </Link2>
+                  </li> */}
 
                   <li className="dropdown submenu nav-item">
-                    <Link1
+                    <Link2
                       title="Pages"
                       className="dropdown-toggle nav-link"
                       data-toggle="dropdown"
                       role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      to="#"
+                      to="donor" spy={true} smooth={true}
                     >
                       Donor
-                    </Link1>
+                    </Link2>
                     <ul role="menu" className=" dropdown-menu">
-                      {/* <li className="nav-item"><NavLink title="Portfolio 2" className="nav-link" to='/Portfolio-2col'>Portfolio 2col</NavLink></li>
-                                        <li className="nav-item"><NavLink title="Portfolio 3" className="nav-link" to='/Portfolio-3col'>Portfolio 3col</NavLink></li>
-                                        <li className="nav-item"><NavLink title="Portfolio Fullwidth" className="nav-link" to='/Portfolio-fullwidth-4col'>Portfolio fullwidth</NavLink></li>
-                                        <li className="nav-item"><NavLink title="PortfolioSingle" className="nav-link" to='/PortfolioSingle'>Portfolio Single</NavLink></li> */}
                       <li className="nav-item">
                         <NavLink
                           exact
@@ -118,21 +122,17 @@ class CustomNavbar extends Component {
                       </li>
                     </ul>
                   </li>
-                  <li className="nav-item dropdown submenu">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href=".#"
-                      role="button"
+                  <li className="dropdown submenu nav-item">
+                    <Link2
+                      title="Pages"
+                      className="dropdown-toggle nav-link"
                       data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
+                      role="button"
+                      to="recipient" spy={true} smooth={true}
                     >
                       Recipient
-                    </a>
-                    <ul className="dropdown-menu">
-                      {/* <li className="nav-item"><NavLink to="/Bloglist" className="nav-link">Blog List</NavLink></li>
-                                        <li className="nav-item"><NavLink to="/BlogGridPage" className="nav-link">Blog Grid</NavLink></li>
-                                        <li className="nav-item"><NavLink to="/BlogSingle" className="nav-link">Blog Single</NavLink></li> */}
+                    </Link2>
+                    <ul role="menu" className=" dropdown-menu">
                       <li className="nav-item">
                         <NavLink
                           exact
@@ -158,7 +158,7 @@ class CustomNavbar extends Component {
                           exact
                           title="SignUp"
                           className="nav-link"
-                          to="/SignUp"
+                          to="/RecipientSignUp"
                         >
                           Sign Up
                         </NavLink>
