@@ -65,7 +65,7 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
-from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy import create_engine, Column, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 import asyncpg
@@ -161,3 +161,56 @@ async def table_data():
         rows = await conn.fetch("SELECT * FROM donor")
         # Return the data as a list of dictionaries
         return [dict(row) for row in rows]
+    
+
+# Donor CRUD
+# Define database model
+class Donor(Base):
+    __tablename__ = "donor"
+    id = Column(Integer, primary_key=True, index=True)
+    password = Column(String)
+    gender = Column(String)
+    firstName = Column(String)
+    lastName = Column(String)
+    userName = Column(String, unique=True, index=True)
+    emailID = Column(String, unique=True, index=True)
+    contactNo = Column(Integer)
+    age = Column(Integer)
+    height = Column(Integer)
+    weight = Column(Integer)
+    testedCovid = Column(Boolean)
+    testedHiv = Column(Boolean)
+    lasttimeDonatedblood = Column(String)
+    anyundergoingMedication = Column(String)
+    anyotherHealthissue = Column(String)
+
+# Define request body schema
+class DonorCreate(BaseModel):
+    password: str
+    gender: str
+    firstName: str
+    lastName: str
+    userName: str
+    emailID: str
+    contactNo: int
+    age: int
+    height: int
+    weight: int
+    testedCovid: bool
+    testedHiv: bool
+    lasttimeDonatedblood: Optional[str] = None
+    anyundergoingMedication: Optional[str] = None
+    anyotherHealthissue: Optional[str] = None
+
+# Create endpoint to handle POST requests to /signup
+@app.post("/donor-signup")
+def create_donor(donor: DonorCreate, db: SessionLocal = Depends(get_db)):
+    db_user = Donor(password=donor.password, gender = donor.gender, firstName = donor.firstName, lastName = donor.lastName,
+                          userName = donor.userName, emailID = donor.emailID, contactNo = donor.contactNo, age = donor.age,
+                          height = donor.height, weight = donor.weight, testedCovid = donor.testedCovid, testedHiv = donor.testedHiv,
+                          lasttimeDonatedblood = donor.lasttimeDonatedblood, anyundergoingMedication = donor.anyundergoingMedication,
+                          anyotherHealthissue = donor.anyotherHealthissue)
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user

@@ -4388,7 +4388,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 /* ------- */
 
-.form-group {
+/* .form-group {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4422,4 +4422,4 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .form-group input[type="radio"]:focus + label:before {
   outline: none;
   box-shadow: 0 0 0 2px #5e2ced30;
-}
+} */
