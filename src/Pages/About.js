@@ -1,9 +1,5 @@
-import React from "react";
-import CustomNavbar from "../components/CustomNavbar";
-import Breadcrumb from "../components/Breadcrumb";
-import Contacts from "../components/Contacts";
-import FooterTwo from "../components/Footer/FooterTwo";
-import FooterData from "../components/Footer/FooterData";
+import React from 'react';
+import Breadcrumb from '../components/Breadcrumb';
 
 const About = () => {
   return (

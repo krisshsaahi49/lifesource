@@ -6,7 +6,7 @@ import HomeEvent from "./Pages/Home-event";
 import Faq from "./Pages/Faq";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
-import NotFound from "./Pages/404";
+// import NotFound from "./Pages/404";
 import { animateScroll } from "react-scroll";
 
 
