@@ -17,9 +17,9 @@ const SignUpForm = () => {
   const [weight, setWeight] = useState("");
   const [testedCovid, setCovid] = useState(false);
   const [testedHiv, setHiv] = useState(false);
-  const [donateddate, setDonateddate] = useState("");
-  const [medications, setMedications] = useState("");
-  const [healthisssues, setHealthissues] = useState("");
+  const [lasttimeDonatedblood, setDonateddate] = useState("");
+  const [anyundergoingMedication, setMedications] = useState("");
+  const [anyotherHealthissue, setHealthissues] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -43,9 +43,9 @@ const SignUpForm = () => {
         weight,
         testedCovid,
         testedHiv,
-        donateddate,
-        medications,
-        healthisssues,
+        lasttimeDonatedblood,
+        anyundergoingMedication,
+        anyotherHealthissue,
       }),
     })
       .then((response) => response.json())
@@ -53,10 +53,6 @@ const SignUpForm = () => {
         console.log(data);
       });
   };
-
-  //   const handleOptionChange = (event) => {
-  //     setSelectedOption(event.target.value);
-  //   };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -71,21 +67,9 @@ const SignUpForm = () => {
                   </h3>
                   <h2 className="f_p f_400 f_size_30 mb-30">
                     Login now and
-                    <br /> starting using our <br />
-                    <span className="f_700">amazing</span> products
+                    <br /> be part of our <br />
+                    <span className="f_700">amazing</span> community
                   </h2>
-                  <ul className="list-unstyled mb-0">
-                    <li>
-                      <i className="ti-check"></i> Premium Access to all
-                      Products
-                    </li>
-                    <li>
-                      <i className="ti-check"></i> Free Testing Tools
-                    </li>
-                    <li>
-                      <i className="ti-check"></i> Unlimited User Accounts
-                    </li>
-                  </ul>
                   <Link exact title="Faq" className="nav-link" to="/SignIn">
                     <button
                       type="submit"
@@ -229,7 +213,6 @@ const SignUpForm = () => {
                         type="radio"
                         name="covid"
                         value
-               
                       />
                       <label>Yes</label>
                       <input
@@ -245,17 +228,13 @@ const SignUpForm = () => {
                       <input
                         type="radio"
                         name="hiv"
-                        value="yes"
-                        checked={testedHiv === "yes"}
-                        onChange={(e) => setHiv(e.target.value)}
+                        value
                       />
                       <label>Yes</label>
                       <input
                         type="radio"
                         name="hiv"
-                        value="no"
-                        checked={testedHiv === "no"}
-                        onChange={(e) => setHiv(e.target.value)}
+                        value={false}
                       />
                       <label>No</label>
                     </div>
@@ -265,17 +244,17 @@ const SignUpForm = () => {
                       </label>
                       <input
                         type="date"
-                        value={donateddate}
+                        value={lasttimeDonatedblood}
                         onChange={(e) => setDonateddate(e.target.value)}
                       />
                     </div>
                     <div className="form-group text_box">
                       <label className="f_p text_c f_400">
-                        Any undergoing medications
+                        Any undergoing anyundergoingMedication
                       </label>
                       <input
                         type="text"
-                        value={medications}
+                        value={anyundergoingMedication}
                         onChange={(e) => setMedications(e.target.value)}
                       />
                     </div>
@@ -285,7 +264,7 @@ const SignUpForm = () => {
                       </label>
                       <input
                         type="text"
-                        value={healthisssues}
+                        value={anyotherHealthissue}
                         onChange={(e) => setHealthissues(e.target.value)}
                       />
                     </div>
