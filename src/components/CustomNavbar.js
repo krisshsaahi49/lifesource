@@ -5,7 +5,7 @@ import { Link as Link2 } from "react-scroll";
 
 class CustomNavbar extends Component {
   render() {
-    var { mClass, nClass, cClass, slogo, hbtnClass } = this.props;
+    var { mClass, nClass, cClass, slogo } = this.props;
     return (
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
         <header className="header_area">
@@ -52,19 +52,19 @@ class CustomNavbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link2 to="about" spy={true} smooth={true}>
+                    <Link2 className="nav-link" to="about" spy={true} smooth={true}>
                       About
                     </Link2>
                   </li>
 
                   <li className="nav-item">
-                    <Link2 to="mission" spy={true} smooth={true}>
+                    <Link2 className="nav-link" to="mission" spy={true} smooth={true}>
                       Mission
                     </Link2>
                   </li>
 
                   <li className="nav-item">
-                    <Link2 to="team" spy={true} smooth={true}>
+                    <Link2 className="nav-link" to="team" spy={true} smooth={true}>
                       Team
                     </Link2>
                   </li>
@@ -166,7 +166,7 @@ class CustomNavbar extends Component {
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <Link2 to="contact" spy={true} smooth={true}>
+                    <Link2 className="nav-link" to="contact" spy={true} smooth={true}>
                       Contact
                     </Link2>
                   </li>

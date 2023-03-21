@@ -1,5 +1,4 @@
 import React from "react";
-import CustomNavbar from "../components/CustomNavbar";
 import Breadcrumb from "../components/Breadcrumb";
 import Contacts from "../components/Contacts";
 import FooterTwo from "../components/Footer/FooterTwo";
