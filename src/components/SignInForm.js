@@ -26,7 +26,7 @@ const SignInFrom =()=>{
                                 <form action="/#" className="login-form sign-in-form">
                                     <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Email or Name</label>
-                                        <input type="text" placeholder="saasland@gmail.com"/>
+                                        <input type="text" placeholder="lifesource@gmail.com"/>
                                     </div>
                                     <div className="form-group text_box">
                                         <label className="f_p text_c f_400">Password</label>
