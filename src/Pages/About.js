@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div id="about" className="body_wrapper">
       <Breadcrumb
-        breadcrumbClass="breadcrumb_area"
+        breadcrumbClass="breadcrumb_area_two"
         imgName="breadcrumb/banner_bg.png"
         Ptitle="About"
         Pdescription="Give the gift of life through blood donation - it's easy with us. Our

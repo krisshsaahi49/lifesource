@@ -4568,7 +4568,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   background-image:  linear-gradient(180deg, #5e2ced 0%, #a485fd 100%);
   position: relative;
   z-index: 1;
-  padding: 235px 0px 125px;
+  padding: 100px 0px 100px;
   overflow: hidden;
 }
 
@@ -4579,7 +4579,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   z-index: -1;
 }
 .breadcrumb_area p{
-  max-width: 580px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -4587,9 +4587,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*================= End breadcrumb_area css =================*/
 /*================= Start breadcrumb_area_two css =================*/
 .breadcrumb_area_two {
-  background: #f8f6fe;
+  background: #1e78b682;
   position: relative;
-  padding: 235px 0px 125px;
+  padding: 100px 0px 100px;
   z-index: 1;
 }
 
